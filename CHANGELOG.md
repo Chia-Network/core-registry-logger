@@ -1,3 +1,12 @@
+## [1.0.9](https://github.com/Chia-Network/core-registry-logger/compare/1.0.8...1.0.9) (2023-09-23)
+
+
+### Features
+
+* add logging on init ([c82daa7](https://github.com/Chia-Network/core-registry-logger/commit/c82daa7cbdc46dd9d718d45a556d0539b689c71c))
+
+
+
 ## [1.0.8](https://github.com/Chia-Network/core-registry-logger/compare/1.0.7...1.0.8) (2023-09-22)
 
 
