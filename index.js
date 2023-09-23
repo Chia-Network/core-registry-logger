@@ -37,7 +37,7 @@ class Logger {
         info: "green",
         debug: "blue",
         trace: "magenta",
-        task_error: "red"
+        task_error: "red",
       },
     };
 
@@ -104,9 +104,18 @@ class Logger {
     );
 
     // Delegate logging methods to the internal logger instance
-    ["info", "warn", "error", "debug", "trace", "fatal", "task_error"].forEach((level) => {
+    Object.keys(customLevels.levels).forEach((level) => {
       this[level] = (...args) => this.logger[level](...args);
     });
+
+    console.log('\n');
+    console.log(`Application name: ${projectName}`);
+    console.log(`Application version: ${packageVersion}`);
+    console.log(`Log level set to ${logLevel}`);
+    console.log(
+      `Available log levels: ${Object.keys(customLevels.levels).join(", ")}`
+    );
+    console.log('\n');
   }
 }
 
