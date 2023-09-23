@@ -107,6 +107,15 @@ class Logger {
     Object.keys(customLevels.levels).forEach((level) => {
       this[level] = (...args) => this.logger[level](...args);
     });
+
+    console.log('\n');
+    console.log(`Application name: ${projectName}`);
+    console.log(`Application version: ${packageVersion}`);
+    console.log(`Log level set to ${logLevel}`);
+    console.log(
+      `Available log levels: ${Object.keys(customLevels.levels).join(", ")}`
+    );
+    console.log('\n');
   }
 }
 
