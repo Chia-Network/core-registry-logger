@@ -11,13 +11,30 @@ const fs = require("fs");
 class Logger {
   /**
    * @param {Object} options - Logger options
+   * @param {string} options.namespace - The Chia namespace for this project
    * @param {string} options.projectName - The name of the project using the logger.
    * @param {string} options.logLevel - The logging level.
    * @param {string} options.packageVersion - The version of the package.
    */
   constructor(options) {
-    const { projectName, logLevel, packageVersion } = options;
+    const { namespace, projectName, logLevel, packageVersion } = options;
 
+    if (!namespace) {
+      throw new Error("options.namespace is required");
+    }
+
+    if (!projectName) {
+      throw new Error("options.projectName is required");
+    }
+
+    if (!logLevel) {
+      throw new Error("options.logLevel is required");
+    }
+
+    if (!packageVersion) {
+      throw new Error("options.packageVersion is required");
+    }
+    
     const customLevels = {
       levels: {
         fatal: 0,
@@ -44,7 +61,7 @@ class Logger {
     addColors(customLevels.colors);
 
     const chiaRoot = getChiaRoot();
-    const logDir = `${chiaRoot}/core-registry/logs/${projectName}`;
+    const logDir = `${chiaRoot}/${namespace}/logs/${projectName}`;
 
     if (!fs.existsSync(logDir)) {
       fs.mkdirSync(logDir, { recursive: true });
