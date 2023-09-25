@@ -1,3 +1,12 @@
+## [1.0.11](https://github.com/Chia-Network/core-registry-logger/compare/1.0.10...1.0.11) (2023-09-25)
+
+
+### Features
+
+* add namespace option ([25e9f90](https://github.com/Chia-Network/core-registry-logger/commit/25e9f9072b40a5950e44229690b92d0c7c989cda))
+
+
+
 ## [1.0.10](https://github.com/Chia-Network/core-registry-logger/compare/1.0.9...1.0.10) (2023-09-23)
 
 
