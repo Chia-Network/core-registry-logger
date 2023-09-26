@@ -1,3 +1,12 @@
+## [1.0.12](https://github.com/Chia-Network/core-registry-logger/compare/1.0.11...1.0.12) (2023-09-26)
+
+
+### Features
+
+* remove task_error ([2c5bfde](https://github.com/Chia-Network/core-registry-logger/commit/2c5bfde8ca3fbf5808ead1b15ee8bedd09aee115))
+
+
+
 ## [1.0.11](https://github.com/Chia-Network/core-registry-logger/compare/1.0.10...1.0.11) (2023-09-25)
 
 
