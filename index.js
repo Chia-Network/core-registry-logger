@@ -39,12 +39,11 @@ class Logger {
       levels: {
         fatal: 0,
         error: 1,
-        task_error: 2,
-        warn: 3,
-        info: 4,
-        task: 5,
-        debug: 6,
-        trace: 7,
+        warn: 2,
+        info: 3,
+        task: 4,
+        debug: 5,
+        trace: 6,
       },
       colors: {
         fatal: "red",
@@ -53,8 +52,7 @@ class Logger {
         task: "cyan",
         info: "green",
         debug: "blue",
-        trace: "magenta",
-        task_error: "red",
+        trace: "magenta"
       },
     };
 
