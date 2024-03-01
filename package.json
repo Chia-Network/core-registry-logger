@@ -1,6 +1,6 @@
 {
   "name": "@chia-carbon/core-registry-logger",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Custom logger for core registry projects",
   "main": "index.js",
   "scripts": {
