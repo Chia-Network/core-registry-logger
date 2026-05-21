@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/Chia-Network/core-registry-logger.git"
   },
-  "bugs":{
+  "bugs": {
     "url": "https://github.com/Chia-Network/core-registry-logger/issues"
   },
   "dependencies": {
@@ -26,5 +26,8 @@
     "Michael.Taylor <mtaylor@michaeltaylor3d.com>",
     "Chris Marslender <chrismarslender@gmail.com>",
     "Zach Brown <zachary.g.brown@gmail.com>"
-  ]
+  ],
+  "engines": {
+    "node": ">=24.14.1"
+  }
 }
