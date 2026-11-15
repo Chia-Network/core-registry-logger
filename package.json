@@ -20,7 +20,7 @@
   "dependencies": {
     "chia-root-resolver": "^1.0.0",
     "winston": "^3.10.0",
-    "winston-daily-rotate-file": "^4.7.1"
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "contributors": [
     "Michael.Taylor <mtaylor@michaeltaylor3d.com>",
